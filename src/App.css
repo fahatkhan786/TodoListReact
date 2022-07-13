@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+hr{
+  border: 1px solid #555;
+  margin: 10px 15px;
+}
+i{
+  color: #282c34;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.container-fluid{
+  background-color: #61dafb;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.card{
+  background: #fff;
+  width: 25rem;
+  padding: 15px;
+  margin: 50px 0;
+  text-align: center;
+}
+.card-title{
+  font-size: 40px;
+  font-weight: 800;
+  color: #282c34;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.addItem{
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+}
+.btn i{
+  color: #fff;
+}
+.addItem .form-control{
+  width: 300px;
+}
+
+.showItem{
+  width: 350px;
+  padding: 8px;
+  /* background: #000; */
+}
+h5{
+  margin-top: 20px;
+  color: #282c34;
+}
+.showItem .eachItem{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.showItem .eachItem .form-check{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.showItem .eachItem span i{
+  font-size: 20px;
+  color: #282c34;
+  cursor: pointer;
+}
+.showItem .eachItem .form-check label{
+  margin: 4px 8px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #282c34;
+  cursor: pointer;
+}
+.showItem .eachItem .iconGroup{
+  width: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.showItem .eachItem .iconGroup span{
+  color: rgb(172, 165, 165);
+}
+.showItem .eachItem .iconGroup #delete:active{
+  color: #f00;
+}
+.showItem .eachItem .iconGroup #update:active{
+  color: #0f0;
+}
+
+.completed{
+  text-decoration: line-through;
+  color: rgb(172, 165, 165);
 }
